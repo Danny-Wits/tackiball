@@ -4,7 +4,6 @@ extends MultiplayerSpawner
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	spawn_path = NodePath("..")
 	if !multiplayer.is_server(): return
 	
 
@@ -23,7 +22,5 @@ func spawn_player(id: int) -> void:
 		10,
 		randf_range(-4, 3)
 	)
-
-	player.set_multiplayer_authority(id)
 
 	get_node(spawn_path).call_deferred("add_child", player)

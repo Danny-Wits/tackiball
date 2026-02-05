@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://caqymajifpsch"]
 
 [ext_resource type="ArrayMesh" uid="uid://b01bnby3341iw" path="res://assests/OBJ format/Map-RL project.obj" id="1_7ft05"]
-[ext_resource type="Texture2D" uid="uid://bcocgj6coe5bq" path="res://assests/OBJ format/Textures/Grass/Grass_diffuseOriginal.jpg" id="2_4ag8t"]
-[ext_resource type="Texture2D" uid="uid://byl6oi0cmn1mp" path="res://assests/OBJ format/Textures/Grass/Grass_ao.jpg" id="3_dpxgc"]
-[ext_resource type="Texture2D" uid="uid://boumjwvgxkrpj" path="res://assests/OBJ format/Textures/Grass/Grass_metallic.jpg" id="4_oexds"]
-[ext_resource type="Texture2D" uid="uid://ch12li581gjk7" path="res://assests/OBJ format/Textures/Grass/Grass_normal.jpg" id="5_naajo"]
+[ext_resource type="Texture2D" uid="uid://bcocgj6coe5bq" path="res://assests/Textures/Grass/Grass_diffuseOriginal.jpg" id="2_4ag8t"]
+[ext_resource type="Texture2D" uid="uid://byl6oi0cmn1mp" path="res://assests/Textures/Grass/Grass_ao.jpg" id="3_dpxgc"]
+[ext_resource type="Texture2D" uid="uid://boumjwvgxkrpj" path="res://assests/Textures/Grass/Grass_metallic.jpg" id="4_oexds"]
+[ext_resource type="Texture2D" uid="uid://ch12li581gjk7" path="res://assests/Textures/Grass/Grass_normal.jpg" id="5_naajo"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7ft05"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -33,7 +33,7 @@ ao_light_affect = 1.0
 ao_texture = ExtResource("3_dpxgc")
 
 [node name="Node3D" type="StaticBody3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_dpxgc")
